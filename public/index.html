@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Browserify Boilerplate</title>
+    <title>Daily Journal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
     <article class="output">
+        <input type="text" id="input--date" placeholder="Date of entry">
+        <input type="text" id="input--concepts" placeholder="Concepts covered">
+        <input type="text" id="input--journal" placeholder="Journal entry">
+        <input type="text" id="input--mood" placeholder="Mood of the day">
+        <button id="entry-save">Save</button>
+        <div class="form-message-container">
+            <span id="form-message" class="form-message"></span>
+        </div>
 
     </article>
 
-    <script src="hellogoodbye.js"></script>
+    <script src="bundle.js"></script>
 </body>
+
 </html>
