@@ -1,8 +1,7 @@
-import sayHello from "./hello"
-import sayGoodbye from "./goodbye"
-import SandwichMaker from "./sandwichMaker"
+import Entry from "./EntryForm"
+import getEntries from "./EntryList"
+import render from "./render"
 
-sayHello()
-sayGoodbye()
 
-SandwichMaker.placeOrder("rye", "capicola", "provolone")
+getEntries()
+    .then(entryList => render(entryList))
